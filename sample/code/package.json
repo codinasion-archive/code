@@ -1,0 +1,9 @@
+{
+  "name": "@codinasion/code-sample",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@codinasion/code": "workspace:*"
+  }
+}

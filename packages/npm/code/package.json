@@ -1,0 +1,45 @@
+{
+  "name": "@codinasion/code",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "bugs": {
+    "url": "https://github.com/codinasion/code/issues",
+    "email": "codinasion@gmail.com"
+  },
+  "author": {
+    "name": "Codinasion",
+    "email": "codinasion@gmail.com",
+    "url": "https://github.com/codinasion"
+  },
+  "keywords": [
+    "@codinasion/code",
+    "code",
+    "tools",
+    "typescript"
+  ],
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit",
+    "test": "jest --config jestconfig.json --maxWorkers=50% --passWithNoTests"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.1.3"
+  }
+}
