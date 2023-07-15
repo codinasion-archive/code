@@ -1,18 +1,26 @@
 {
   "private": true,
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
+    "clean": "turbo clean",
+    "dev": "dotenv -- turbo run dev --concurrency 16",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "build": "turbo run build",
+    "build:local": "dotenv -- turbo run build",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx,json}\"",
+    "all": "turbo lint && pnpm build:local && pnpm test && pnpm format",
+    "publish-packages": "pnpm all && changeset version && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@turbo/gen": "^1.9.7",
+    "dotenv-cli": "latest",
     "eslint": "^7.32.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
     "turbo": "latest"
   },
   "packageManager": "pnpm@7.15.0",
-  "name": "code"
+  "name": "codinasion"
 }
