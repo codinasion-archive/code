@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "",
+  "description": "A collection of TypeScript functions",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
