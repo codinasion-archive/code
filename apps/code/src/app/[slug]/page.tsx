@@ -47,12 +47,12 @@ export default async function CodePage({
           <h2 className="text-2xl md:text-3xl font-bold">{`${KebabCaseStringToTitleCaseString(
             slug
           )}`}</h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-400"></p>
         </div>
 
-        <MarkdownPreview>
-          {`## TyepeScript Function
-
+        {data && CodeText && SampleCodeText && (
+          <MarkdownPreview>
+            {`## TyepeScript Function
+  
 \`\`\`typescript
 ${CodeText}
 \`\`\`
@@ -65,7 +65,8 @@ This code requires [\`@codinasion/code\`](https://www.npmjs.com/package/@codinas
 ${SampleCodeText}
 \`\`\`
 `}
-        </MarkdownPreview>
+          </MarkdownPreview>
+        )}
       </div>
     </>
   );

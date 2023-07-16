@@ -3,6 +3,7 @@
 import { ThemeProvider } from "next-themes";
 
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import ScrollToButton from "@/components/ScrollToButton";
 
 interface Props {
@@ -30,6 +31,7 @@ export default function Layout({ children }: Props) {
           <div className="container mx-auto max-w-7xl items-center justify-between p-6 lg:px-8">
             {children}
           </div>
+          <Footer />
           <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"
