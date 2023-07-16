@@ -1,7 +1,11 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local", "**/.env.*dev", "**/.env"],
-  "globalEnv": [],
+  "globalEnv": [
+    "CODINASION_REPO_TOKEN",
+    "CODINASION_CODE_URL",
+    "CODINASION_SAMPLE_CODE_URL"
+  ],
   "pipeline": {
     "dev": {
       "cache": false,

@@ -1,3 +1,4 @@
+import type { CodeType } from "./Code";
 import type {
   NavbarLinkType,
   NavbarItemType,
@@ -8,6 +9,7 @@ import type {
 } from "./NavbarLinks";
 
 export type {
+  CodeType,
   NavbarLinkType,
   NavbarItemType,
   NavbarLinkItemType,

@@ -8,6 +8,13 @@ describe("CombineStrings", () => {
     expect(result).toEqual(expected);
   });
 
+  it("should return same string", () => {
+    const strings = ["A"];
+    const expected = ["A"];
+    const result = CombineStrings(strings);
+    expect(result).toEqual(expected);
+  });
+
   it("should combine an array of strings with a specified joining keyword", () => {
     const strings = ["apple", "banana", "orange"];
     const joiningKeyword = "And";

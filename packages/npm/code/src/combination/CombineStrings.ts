@@ -2,6 +2,10 @@ export function CombineStrings(
   strings: string[],
   joiningKeyword: string = "To"
 ): string[] {
+  if (strings.length === 1) {
+    return strings;
+  }
+
   // remove duplicates
   const uniqueStrings = [...new Set(strings)];
 
