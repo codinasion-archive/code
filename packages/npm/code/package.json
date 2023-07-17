@@ -10,6 +10,7 @@
   "files": [
     "dist"
   ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/codinasion/code/issues",
     "email": "codinasion@gmail.com"
