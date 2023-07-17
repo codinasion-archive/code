@@ -1,3 +1,5 @@
+import { CombineStrings } from "@codinasion/code";
+
 import { CodeType } from "@/types";
 
 const CodeData: CodeType[] = [
@@ -31,7 +33,14 @@ const CodeData: CodeType[] = [
   },
 ];
 
-export { CodeData };
+const AllCodeCategoryData = CodeData.map((code) => code.category);
+const AllCodeFunctionData = CodeData.map((code) =>
+  (code.combine === true ? CombineStrings(code.functions) : code.functions).map(
+    (func) => func
+  )
+).flat();
+
+export { CodeData, AllCodeCategoryData, AllCodeFunctionData };
 
 export async function GetCodeText({ slug }: { slug: string }) {
   const res = await fetch(`${process.env.CODINASION_CODE_URL}/${slug}.ts`, {
@@ -52,7 +61,6 @@ export async function GetCodeText({ slug }: { slug: string }) {
 }
 
 export async function GetSampleCodeText({ slug }: { slug: string }) {
-  console.log("slug: ", slug);
   const res = await fetch(
     `${process.env.CODINASION_SAMPLE_CODE_URL}/${slug}.js`,
     {
