@@ -57,6 +57,21 @@ const nextConfig = {
         destination: "/:slug",
         permanent: true,
       },
+      {
+        source: "/sitemaps.xml",
+        destination: "/sitemap.xml",
+        permanent: true,
+      },
+      {
+        source: "/sitemap-categories.xml",
+        destination: "/sitemap-category.xml",
+        permanent: true,
+      },
+      {
+        source: "/sitemap-codes.xml",
+        destination: "/sitemap-code.xml",
+        permanent: true,
+      },
     ];
   },
 };

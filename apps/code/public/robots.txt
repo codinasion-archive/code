@@ -7,3 +7,5 @@ Host: https://code.codinasion.org
 
 # Sitemaps
 Sitemap: https://code.codinasion.org/sitemap.xml
+Sitemap: https://code.codinasion.org/sitemap-category.xml
+Sitemap: https://code.codinasion.org/sitemap-code.xml

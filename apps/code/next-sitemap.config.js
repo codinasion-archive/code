@@ -4,9 +4,12 @@ const siteUrl = "https://code.codinasion.org";
 const config = {
   siteUrl: siteUrl,
   generateRobotsTxt: true,
-  exclude: ["/~offline"],
+  exclude: ["/~offline", "/sitemap-category.xml", "/sitemap-code.xml"],
   robotsTxtOptions: {
-    additionalSitemaps: [],
+    additionalSitemaps: [
+      `${siteUrl}/sitemap-category.xml`,
+      `${siteUrl}/sitemap-code.xml`,
+    ],
   },
 };
 
