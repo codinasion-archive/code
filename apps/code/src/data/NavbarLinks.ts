@@ -1,5 +1,5 @@
 import {
-  NewspaperIcon,
+  CodeBracketIcon,
   WrenchScrewdriverIcon,
   CheckBadgeIcon,
 } from "@heroicons/react/24/outline";
@@ -12,30 +12,25 @@ import SiteMetadata from "./SiteMetadata";
 
 const NavbarLinks: NavbarLinkType[] = [
   {
-    label: "Blog",
-    type: "link",
-    href: "/blog",
-  },
-  {
     label: "Projects",
     type: "menu",
     items: [
       {
-        label: "Blog",
-        description: "I write about web development and programming",
-        href: "/blog",
-        icon: NewspaperIcon,
+        label: "Code",
+        description: "A collection of useful TypeScript code snippets",
+        href: "https://code.codinasion.org",
+        icon: CodeBracketIcon,
       },
       {
         label: "Tools",
-        description: "I build online tools to help me and others",
-        href: "/tools",
+        description: "A collection of useful online tools",
+        href: "https://tools.codinasion.org",
         icon: WrenchScrewdriverIcon,
       },
       {
         label: "Good First Issues",
         description: "Good first issues finder for open source projects",
-        href: "/good-first-issue",
+        href: "https://goodfirstissue.codinasion.org",
         icon: CheckBadgeIcon,
       },
     ],
