@@ -14,7 +14,7 @@ const CodeData: CodeType[] = [
     functions: ["Ascii", "Binary", "Decimal", "Hexadecimal", "Octal"],
   },
   {
-    category: "String Manipulation",
+    category: "String",
     combine: true,
     functions: [
       "CamelCaseString",
@@ -73,7 +73,7 @@ export async function GetSampleCodeText({ slug }: { slug: string }) {
   );
 
   if (!res.ok) {
-    throw new Error("Failed to fetch code text");
+    throw new Error("Failed to fetch sample code text");
   }
 
   const data = await res.text();
