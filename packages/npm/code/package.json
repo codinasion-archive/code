@@ -1,15 +1,16 @@
 {
   "name": "@codinasion/code",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "publishConfig": {
     "access": "public"
   },
-  "description": "",
+  "description": "A collection of TypeScript functions",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/codinasion/code/issues",
     "email": "codinasion@gmail.com"
