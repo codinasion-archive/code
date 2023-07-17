@@ -1,5 +1,12 @@
 # @codinasion/code
 
+## 2.2.0
+
+### Minor Changes
+
+- Update `CombineStrings`
+- Fix `CamelCaseStringToPathCaseString`
+
 ## 2.1.0
 
 ### Minor Changes
