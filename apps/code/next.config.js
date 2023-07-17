@@ -24,6 +24,41 @@ const nextConfig = {
       },
     ],
   },
+
+  redirects: async () => {
+    return [
+      {
+        source: "/api/categories",
+        destination: "/api/category",
+        permanent: true,
+      },
+      {
+        source: "/api/codes",
+        destination: "/api/code",
+        permanent: true,
+      },
+      {
+        source: "/category",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/categories",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/code/:slug",
+        destination: "/:slug",
+        permanent: true,
+      },
+      {
+        source: "/codes/:slug",
+        destination: "/:slug",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = withPWA(nextConfig);
